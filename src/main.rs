@@ -1777,7 +1777,7 @@ async fn main() {
 
             match librespot::discovery::Discovery::builder(device_id, client_id)
                 .name(setup.connect_config.name.clone())
-                .device_type(setup.connect_config.device_type)
+                .device_type(DeviceType::COMPUTER) // Change to COMPUTER
                 .is_group(setup.connect_config.is_group)
                 .port(setup.zeroconf_port)
                 .zeroconf_ip(setup.zeroconf_ip.clone())
