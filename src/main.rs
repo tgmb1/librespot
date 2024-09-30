@@ -452,7 +452,7 @@ fn get_setup() -> Setup {
     .optopt(
         DEVICE_TYPE_SHORT,
         DEVICE_TYPE,
-        "Displayed device type. Defaults to speaker.",
+        "Displayed device type. Defaults to computer.", // Change to computer
         "TYPE",
     ).optflag(
         "",
